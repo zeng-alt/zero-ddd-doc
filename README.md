@@ -1,3 +1,3 @@
 # 个人主页
 
-[https://github.com/zeng-alt](https://github.com/zeng-alt)
+{% embed url="https://github.com/zeng-alt" %}
