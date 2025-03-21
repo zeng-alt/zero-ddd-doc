@@ -1,3 +1,3 @@
 # 个人主页
 
-{% embed url="https://github.com/zeng-alt" %}
+{% @github-files/github-code-block %}
