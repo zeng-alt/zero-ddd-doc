@@ -11,7 +11,7 @@
 
 <pre><code>zero-ddd
 ├── zero-business
-│       └── zero-main-business                // 主服务 [8082]
+│       └── zero-main-business               // 主服务 [8082]
 <strong>├── zero-ddd-ai        // ai服务 [知识库和命令助手]
 </strong>├── zero-ddd-auth      // 认证服务 [8084]
 ├── zero-ddd-component // 组件模块
@@ -38,7 +38,20 @@
 
 <figure><img src=".gitbook/assets/未命名文件.png" alt=""><figcaption></figcaption></figure>
 
+### 单模块代码架构
+
+&#x20;由spring-modulith和jmolecules进行包之间依赖管理
+
+<figure><img src=".gitbook/assets/屏幕截图 2025-03-22 203744.png" alt=""><figcaption></figcaption></figure>
+
 ### 多模块代码架构
 
-### 单模块代码架构
+1. maven多模块项目
+2. run是配置和启动层
+3. application是对内服务暴露层，比如给其他服务的rpc调用
+4. domain领域层，是由领域模型和命令处理器组成
+5. interfaces是对外暴露层，提供rest和graphql接口
+6. infrastructure操作数据库，缓存和消息队列等，也是事件处理器和do层，对应真正的数据库表
+
+<figure><img src=".gitbook/assets/屏幕截图 2025-03-22 204100.png" alt=""><figcaption></figcaption></figure>
 
