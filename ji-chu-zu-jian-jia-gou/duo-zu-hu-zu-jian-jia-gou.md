@@ -14,6 +14,10 @@ zero-ddd-tenant-component
 ├── zero-ddd-tenant-sharded-component     // 实现多租户分库分表
 ```
 
+## 模块之间的依赖关系
+
+<figure><img src="../.gitbook/assets/屏幕截图 2025-03-22 215457.png" alt=""><figcaption></figcaption></figure>
+
 ## 使用多租户模块
 
 ### 在pom.xml引入依赖
@@ -90,3 +94,18 @@ multi-tenancy:
 1. 实现com.zjj.tenant.management.component.spi.TenantDataSourceProvider
 2. 实现com.zjj.tenant.management.component.spi.TenantSingleDataSourceProvider
 
+## 其他工具类
+
+手动切换租户
+
+```java
+@SwitchTenant // 在方法层
+```
+
+```java
+TenantContextHolder // 在方法内 mvc
+```
+
+```java
+ReactiveTenantContextHolder // 在方法内 reactive
+```
