@@ -1,6 +1,7 @@
 # Table of contents
 
 * [项目地址](README.md)
+* [技术选型](ji-shu-xuan-xing.md)
 * [项目架构](xiang-mu-jia-gou.md)
 * [基础组件架构](ji-chu-zu-jian-jia-gou/README.md)
   * [多租户组件架构](ji-chu-zu-jian-jia-gou/duo-zu-hu-zu-jian-jia-gou.md)
