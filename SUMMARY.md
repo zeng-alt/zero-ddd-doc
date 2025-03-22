@@ -5,7 +5,7 @@
 * [项目架构](xiang-mu-jia-gou.md)
 * [基础组件架构](ji-chu-zu-jian-jia-gou/README.md)
   * [多租户组件架构](ji-chu-zu-jian-jia-gou/duo-zu-hu-zu-jian-jia-gou.md)
-  * [权限组件架构](ji-chu-zu-jian-jia-gou/quan-xian-zu-jian-jia-gou.md)
+  * [安全组件架构](ji-chu-zu-jian-jia-gou/an-quan-zu-jian-jia-gou.md)
   * [多级缓存架构](ji-chu-zu-jian-jia-gou/duo-ji-huan-cun-jia-gou.md)
   * [领域公共层架构](ji-chu-zu-jian-jia-gou/ling-yu-gong-gong-ceng-jia-gou.md)
   * [核心组件API](ji-chu-zu-jian-jia-gou/he-xin-zu-jian-api.md)

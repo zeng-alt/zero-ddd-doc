@@ -109,3 +109,9 @@ TenantContextHolder // 在方法内 mvc
 ```java
 ReactiveTenantContextHolder // 在方法内 reactive
 ```
+
+## web项目中在过滤器中切换租户
+
+1. 使用TenantContextHolder或者ReactiveTenantContextHolder
+2. 引入com.zjj:zero-ddd-security-tenant模块
+3. 详细请查看安全组件架构
