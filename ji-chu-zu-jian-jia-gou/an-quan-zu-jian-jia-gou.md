@@ -50,3 +50,101 @@ security:
     username-parameter: username      // 匹配的用户名字段
     password-parameter: password      // 匹配的密码字段
 ```
+
+## jwt模块&#x20;
+
+提供JWT认证和JWT续期过滤器，要先引入core模块，\[功能不灵活，后期完善]
+
+### 引入依赖
+
+```xml
+<dependency>
+    <groupId>com.zjj</groupId>
+    <artifactId>zero-ddd-security-jwt-component</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+### 开启配置
+
+更细节配置查看JwtProperties类
+
+```yaml
+security:
+  jwt:
+    enabled: true
+```
+
+### 引入缓存依赖，jwt基于缓存
+
+缓存二选一，如果有二级缓存默认使用二级，相关配置查询多级缓存架构
+
+1. redis缓存
+
+```xml
+<dependency>
+    <groupId>com.zjj</groupId>
+    <artifactId>zero-ddd-cache-component</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+1. 二级缓存
+
+```xml
+<dependency>
+    <groupId>com.zjj</groupId>
+    <artifactId>zero-ddd-l2-cache-component</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+### RBAC模块
+
+1. 在请求级别进行拦截，能控制到按钮级别
+2. 在请求级别进行graphql拦截
+
+#### 引入依赖
+
+```xml
+<dependency>
+    <groupId>com.zjj</groupId>
+    <artifactId>zero-ddd-security-rbac-component</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+### 开启配置
+
+```yaml
+security:
+  context:
+    enabled-access: true
+```
+
+### 验证信息提供者接口
+
+可以直接使用默认的，操作RbacCacheManage，最好使用二级缓存
+
+1. ```
+   AbstractResourceLocator
+   ```
+2. ```
+   AbstractReactiveResourceLocator
+   ```
+
+### ABAC模块
+
+等待完善
+
+### Fast Auth模块
+
+### 手机验证码登录
+
+### 验证码模块
+
+### 切换租户模块
+
+### 自定义登录模块
+
+### 自定义认证模块
